@@ -1,6 +1,6 @@
 FROM node:20 AS builder
 WORKDIR /opt/server
-COPY package.json .
+COPY package.json .   
 COPY *.js .
 RUN npm install
 
@@ -25,3 +25,4 @@ CMD ["node", "index.js"]
 # COPY *.js .
 # RUN npm install
 # CMD ["node", "index.js"]
+#  . means current directory
